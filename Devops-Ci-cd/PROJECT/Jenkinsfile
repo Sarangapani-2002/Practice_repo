@@ -26,7 +26,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 sh '''
-                cd Devops-Ci-c/PROJECT
+                cd Devops-Ci-cd/PROJECT
                 docker build -t $APP_NAME:latest .
                 '''
             }
