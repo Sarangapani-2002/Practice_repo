@@ -35,6 +35,7 @@ pipeline {
         stage('Deploy Application') {
             steps {
                 sh '''
+                cd Devops-Ci-cd/PROJECT
 *               docker compose up -d --build
                 docker ps
                 '''
